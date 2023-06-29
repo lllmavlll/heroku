@@ -1,0 +1,127 @@
+.MapSec-1{
+    background: url(../Assets/bg/val_BGI.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mapGrid{
+    width: 100%;
+    padding: 80px 10% 0;
+    display: grid;
+    grid-template-columns: 40% 50%;
+}
+.mapGrid h1{
+    font-size: 100px;
+    color: white;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.pDiv {
+    width: 100%;
+    padding: 0 40px;
+}
+.pDiv p{
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 18px;
+}
+.pDiv2{
+    height: 100%;
+}
+.pDiv2 img{
+    width: 450px;
+}
+.MapSec-2{
+    background: url(../Assets/bg/valbg.jpeg);
+    background-size: cover;
+    padding: 0 5% 20px ;
+    background-attachment: fixed;
+
+}
+.caros{
+    padding: 150px 20px;
+}
+/********* carousel part *******/
+
+.mapCard{
+    width: 75%;
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.mapCard h1{
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    color: rgb(225, 225, 225);
+    bottom: -10px;
+    text-align: center;
+    right: 0;
+    font-size: 60px;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 15px 40px;
+    text-transform: uppercase;
+
+}
+.sliderImg{
+    /* background: url(../Assets/bg/valbg.jpeg); */
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sliderImg img{
+    width: 100%;
+}
+
+@media(max-width:768px){
+    .mapGrid{
+    grid-template-columns: 100%;
+    padding: 40px 0;
+    position: relative;
+    }
+    .mapGrid h1{
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+    .pDiv {
+        padding: 0 50px;
+        z-index: 1;
+    }
+    .pDiv2{
+       position: absolute;
+       opacity: .8;
+       padding: 0;
+    }
+    .pDiv2 img{
+        width: 340px;
+        margin-left: 50px;
+        margin-top: 70px;
+    }
+    .MapSec-2{
+        background: url(../Assets/bg/valbg.jpeg);
+        background-size: cover;
+        padding: 0;
+    }
+    .caros{
+        padding:  60px 0;
+    }
+    .mapCard{
+        width: 100%;
+        height: 100%;
+        margin: 0 ;
+    }
+    .mapCard h1{
+        bottom: -10px;
+        right: 0;
+        font-size: 24px;
+        padding: 5px ;
+    }
+
+
+}

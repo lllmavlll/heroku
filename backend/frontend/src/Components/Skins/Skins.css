@@ -1,0 +1,176 @@
+.skinsMain{
+    background: url(../Assets/bg/val_BGI.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+.Sk-sec1{
+    width: 60%;
+    padding: 0 5%;
+    padding-bottom: 40PX;
+
+}
+.Sk-sec1 h1{
+    color: white;
+    font-size: 100px;
+    text-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+.Sk-sec1 P{
+    color: white;
+    font-size: 18PX;
+    text-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+}
+.Sk-sec1 P:nth-child(4){
+    color: white;
+    font-size: 28PX;
+    text-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Sk-sec2{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 5%;
+    padding: 0 5%;
+    padding-bottom: 40PX;
+}
+.sec2 h1{
+    color: white;
+    font-size: 46px;
+    text-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+    padding: 0 5%;
+}
+.Sk-sec2-grid1 p{
+    color: white;
+    font-size: 18px;
+    text-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+.Sk-sec2-grid2 img{
+    width: 750px;
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+}
+.edition-list{
+    padding-left: 50px;
+}
+.edition-list li{
+    color: white;
+    font-size: 18px;
+    text-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+.edition-list li b{
+    color: #0194eb;
+}
+.Sk-sec4-grid2 img{
+    width: 880px;
+}
+.Sk-sec4{
+    display: grid;
+    grid-template-columns: 35% 60%;
+    gap: 5%;
+    padding: 0 5%;
+    padding-bottom: 40PX;
+}
+.sec5{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    padding: 0 5%;
+}
+.sec5 h1{
+    color: white;
+    font-size: 50px;
+    text-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+}
+.skinSearchBox{
+    display: flex;
+    gap: 5%;
+}
+.skinSearchBox input{
+    background: none;
+    color: white;
+    border: 1px solid #0194eb;
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+    outline: none;
+}
+.skinSearchBox input::placeholder{
+    color: #0194eb;
+}
+.skinSearchBox button{
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+
+
+
+
+
+@media(max-width:768px){
+    .Sk-sec1{
+        width: 100%;
+        padding: 0 40px;
+        padding-bottom: 40PX;
+    
+    }
+    .Sk-sec1 h1{
+        font-size: 60px;
+    }
+    .Sk-sec1 P:nth-child(4){
+        font-size: 22PX;
+    }
+    .Sk-sec2{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 5%;
+        padding: 0 40px;
+        padding-bottom: 40PX;
+    }
+    .sec2 h1{
+        color: white;
+        font-size: 40px;
+        text-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+        margin-bottom: 45px;
+        padding: 0 40px;
+    }
+    .Sk-sec2-grid2{
+        width: 100%;
+        height: 200px;
+    }
+    .Sk-sec2-grid2 img{
+        width: 300px;
+        box-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+    }
+    .Sk-sec3-grid2 img{
+        width: 100%;
+        width: 300px;
+        box-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+    }
+    .edition-list{
+        padding-left: 10px;
+    }
+    .Sk-sec4{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 5%;
+        padding: 0 40px;
+        padding-bottom: 40PX;
+    }
+    .Sk-sec4-grid2 img{
+        width: 310px;
+        padding-bottom: 50px;
+    }
+    .sec5{
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        align-items: center;
+        padding: 0 5%;
+    }
+}

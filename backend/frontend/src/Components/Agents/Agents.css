@@ -1,0 +1,155 @@
+.A-sec1{
+    background: url(../Assets/bg/blackBG.png);
+    background-attachment: fixed;
+    background-size: contain;
+}
+.A-sec1{
+    padding:  0 50px;
+    display: grid;
+    grid-template-columns: 30% 62%;
+    gap: 8%;
+}
+.A-grid1{
+    overflow-y: auto;
+    gap: 0px;
+    max-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 30px;
+}
+.A-grid1::-webkit-scrollbar{
+    color:#0194eb;
+    width: 0;
+}
+.A-grid1 .A-link{
+    text-decoration: none;
+}
+.A-grid1 .A-link h1{
+   font-size: 90px;
+   color: rgb(225, 224, 224);
+   transition: .4s;
+   text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+   border-spacing: -10px;
+   margin: 0;
+   height: 85px;
+}
+.A-grid1 .A-link h1:hover{
+    margin-left: 25px;
+    color: #0194eb;
+}
+.A-cardMain{
+    display: grid;
+    grid-template-columns: 60% 45%;
+    padding: 0 5%;
+    gap: 10px;
+}
+.cMain1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.cMain1 img{
+    padding: 20% 0;
+    width: 80%;
+    position: absolute;
+}
+.cMain2{
+    padding: 30% 0;
+    z-index: 5;
+}
+.cMain2 h1{
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+.cMain2 h3{
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+.cMain2 p{
+    font-size: 18px;
+    color: white;
+   text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* //----- agents ----// */
+.cMain1  .reyna{
+    width: 300px;
+}
+.cMain1  .trio{
+    width: 600px;
+    padding-right: 50px;
+}
+
+@media (max-width:768px){
+    .A-sec1{
+        padding:  30px;
+        grid-template-columns: 100%;
+        gap: 0%;
+    }
+    .A-grid1{
+        overflow-x: auto;
+        margin-bottom: -0;
+        height: 100px;
+        flex-direction: row;
+        gap: 30px;
+        padding-right: 0px;
+    }
+    .A-grid1 .A-link h1{
+        font-size: 80px;
+        color: rgb(225, 224, 224);
+        transition: .4s;
+        text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+        border-spacing: -10px;
+        margin: 0;
+        height: 85px;
+    }
+    .A-grid1 .A-link h1:hover{
+        margin-left: 0;
+        color: #0194eb;
+    }
+    .A-cardMain{
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 0 5%;
+        gap: 10px;
+    }   
+    .cMain1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .cMain1 img{
+        padding: 20% 0;
+        width: 100%;
+        position:relative;
+    }
+        .cMain2{
+        padding: 10% 0;
+        z-index: 5;
+    }
+    .cMain2 h1{
+        font-size: 50px;
+        color: white;
+        text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+        margin-bottom: 40px;
+    }
+    .cMain2 h3{
+        font-size: 25px;
+        color: white;
+        text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+        margin-bottom: 20px;
+    }
+    .cMain1  .reyna{
+        width: 300px;
+    }
+    .cMain1  .trio{
+        width: 300px;
+        padding-right: 0px;
+    }
+   
+}

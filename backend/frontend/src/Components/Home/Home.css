@@ -1,0 +1,385 @@
+:root{
+    ---homecol1:#0194eb;
+}
+
+/* .HomeMain{
+    background:url(../Assets/bg/background-sprite.png);
+    background-repeat: no-repeat;
+    height: 1000%;
+} */
+.homeDiv2 {
+    background-color: url(../Assets/vids/homePage.mp4);
+    width: 100%;
+    height: 91vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainVid{
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+
+}
+
+.homeDiv2Con{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homeDiv2Con p{
+    color:rgb(224, 224, 224);
+    font-size: 15px;
+    letter-spacing: .5px;
+    font-weight: 600;
+    padding-bottom: 60px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+
+}
+.homeDiv2Con img{
+    width: 650px;
+    padding-bottom: 50px;
+
+}
+.homeDiv2Con .valBtn{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 4px;
+    transition: .6s;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+
+    
+}
+ .valBtn::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: var(---homecol1);
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: all .5s;
+}
+.valBtn:hover:before{
+    width: 100%;
+}
+.valoBan {
+    background: url(../Assets/bg/gameVal.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+
+}
+.valBanInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:  300px 100px;
+}
+ .valBanInputs p{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: white;
+    padding-bottom: 30px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+ .valBanInputs h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 100px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.valBanInputs button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid var(---homecol1);
+    background: var(---homecol1);
+    color: white;
+    border-radius: 4px;
+    transition: .6s;
+    font-size: 14px;
+    margin-right: 30px;
+    font-weight: 600;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+ .valBanInputs button:hover{
+    background-color: #e3dad1;
+    color: black;
+}
+.valoBan2 {
+    background:url(../Assets/bg/valbg.jpeg);
+    background-position:center ;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.valoBan2 .valBanH1{
+    color:rgb(52, 52, 52);
+    font-size: 100px;
+    padding: 60px 25% 10px;
+    font-weight: 600;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    /* text-align: center; */
+}
+
+.valoBan2Div1{
+    padding: 60px 100px;
+    gap: 100px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 50%;
+}
+.valoBan2Div1 .gplay{
+    width: 450px;
+    padding-right: 50px;
+}
+.valoBan2Div1 .gplay h1{
+color: #d13738;
+padding-left: 20px;
+margin-bottom: 20px;
+text-transform: uppercase;
+font-weight: 600;
+}
+.valoBan2Div1 .gplay p{
+    font-size: 18px;
+}
+.valoBan2Div1 .gplay1{
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.HomeAgentSection{
+    background: url(../Assets/bg/val_BGI.jpg);
+    background-attachment: fixed;
+
+
+    }
+.agentSectionDiv{
+    display: grid;
+    grid-template-columns: 50% 40%;
+    width: 100%;
+    height: 90vh;
+    padding: 70px 0;
+}
+.ASD1{
+    padding: 0 0 0 280px;
+}
+.ASD1 img{
+    width: 420px;
+}
+.ASD2 {
+    padding: 40px 0;
+}
+.ASD2 h1{
+    font-size: 100px;
+    line-height: .9;
+    color: white;
+    margin-bottom: 40px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.ASD2 h4{
+    font-size: 22px;
+    line-height: .9;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.ASD2 p{
+    font-size: 17px;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.ASD2 button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid var(---homecol1);
+    background: var(---homecol1);
+    color: white;
+    border-radius: 4px;
+    transition: .6s;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.ASD2 button:hover{
+    background-color: #e3dad1;
+    color:black;
+}
+.MapAgentSection{
+    background: url(../Assets/bg/mapsBg4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.mapSectionDiv{
+    width: 100%;
+    height: 100%;
+    padding: 10% 10%;
+}
+.mapSectionDiv h1{
+    font-size: 100px;
+    line-height: .9;
+    color: white;
+    margin-bottom: 70px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.mapSectionDiv h4{
+    font-size: 22px;
+    line-height: .9;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.mapSectionDiv p{
+    width: 300px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.mapSectionDiv button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid var(---homecol1);
+    background: var(---homecol1);
+    color: white;
+    border-radius: 4px;
+    transition: .6s;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.mapSectionDiv button:hover{
+    background-color: #e3dad1;
+    color:black;
+}
+
+@media (max-width: 768px){
+    .homeDiv2{
+        height: 80vh;
+    }
+    .homeDiv2Con{
+        width: 100%;
+
+    }
+    .homeDiv2Con img{
+        width: 250px;
+        padding-bottom: 20px;
+    }
+    .homeDiv2Con p{
+        font-size: 12px;
+        padding-bottom: 15px;
+    }
+    .homeDiv2Con .valBtn{
+        width: 150px;
+        height: 40px;
+    }
+    /* agents banner */
+    .agentSectionDiv{
+        padding: 30px 0;
+        grid-template-columns: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .ASD1{
+        padding: 0 0 0 50px;
+    }
+    .ASD1 img{
+        width: 340px;
+        position: absolute;
+    }
+    .ASD2{
+        padding: 50px;
+        z-index: 1;
+    }
+    .ASD2 h1{
+        font-size: 70px;
+    }
+    .mapSectionDiv{
+        padding: 70px 50px;
+    }
+    .mapSectionDiv h1{
+        font-size: 70px;
+    }
+    .valoBan{
+    height: 90vh;
+    }
+    .valBanInputs{
+        padding: 140px 50px;
+    }
+    .valBanInputs h1{
+        font-size: 70px;
+        padding-bottom: 50px;
+    }
+    .valBanInputs button{
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+    .valoBan2{
+        padding: 40px;
+    }
+    .valoBan2 .valBanH1{
+        font-size: 75px;
+        line-height: 1;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    .valoBan2Div1{
+        padding: 0;
+        grid-template-columns: 100%;
+        gap: 50px;
+    }
+    .valoBan2Div1 .gplay{
+        width: 100%;
+        padding-right: 0;
+    }
+    .valoBan2Div1 .gplay h1{
+        font-size: 40px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        }
+}

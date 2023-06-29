@@ -1,0 +1,155 @@
+:root{
+    ---color1:#1e2635;
+    ---color2:#0194eb;
+}
+.NavbarHead{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(---color1);
+}
+.Logo1{
+    padding: 5px 50px;
+    display: flex;
+}
+.Logo1 .LogoImg{
+    width: 94px;
+    margin-right: -25px;
+}
+.Logo1 .logoLInk{
+    text-decoration: none;
+}
+.Logo1 h1{
+    color: white;
+    font-size: 45px;
+}
+.Logo1 span{
+    color: var(---color2);
+    transition: .4s;
+}
+.Logo1 span:hover{
+    color: white;
+}
+.navLinks{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLinks  li {
+    padding: 10px 0;
+    list-style: none;
+    margin-right: 50px;
+}
+.navLinks  li .navLink{
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .4s;
+}
+.navLinks  li .navLink:hover{
+    color: var(---color2);
+}
+.navSignup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navSignup i{
+    margin-right: 8px;
+    font-size: 18px;
+    color: var(---color2);
+    transition: .4s;
+    cursor: pointer;
+}
+.navSignup span{
+    margin-right: 15px;
+    font-size: 28px;
+    color: var(---color2);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.navSignup span:hover{
+    text-decoration: underline;
+}
+.signButton{
+    border: none;
+    outline: none;
+    margin-right: 30px;
+    color: var(---color2);
+    border: 1px solid var(---color2);
+    background-color: transparent;
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+    transition: .4s;
+}
+.signButton1{
+    border: none;
+    outline: none;
+    color: var(---color2);
+    background-color: transparent;
+    border-radius: 4px;
+    margin-right: 30px;
+    transition: .4s;
+    justify-content: center;
+}
+.signButton1 i{
+    font-size: 28px;
+
+}
+
+@media (max-width:768px){
+   .NavbarHead{
+    flex-direction: column;
+    justify-content:end;
+    align-items: flex-start;
+   }
+   .Logo1{
+    padding: 0px;
+   }
+   .Logo1 .LogoImg{
+    width: 75px;
+    margin-right: -20px;
+
+   }
+   .navSignup{
+    position: absolute;
+    top: 23px;
+    right: 3%;
+   }
+   .navLinks{
+    align-items: center;
+    text-align: center;
+   }
+   .navLinks  li{
+    margin-right: 0;
+    padding: 0 20px 5px;
+   }
+   .navSignup i{
+    font-size: 18px;
+   }
+   .navSignup span{
+    font-size: 14px;
+    margin-right: 8px;
+   }
+   .signButton{
+    margin-right: 0px;
+   }
+   .signButton1{
+    margin-right: 0px;
+   }
+   .signButton1 i{
+    font-size: 24px;
+
+}
+
+}

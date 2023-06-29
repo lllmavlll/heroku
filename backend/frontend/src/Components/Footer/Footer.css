@@ -1,0 +1,111 @@
+:root{
+    ---color1:#1e2635;
+    ---color2:#0194eb;
+}
+.FooterMain{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(---color1);
+    position: relative;
+    /* box-shadow:  0px -5px  15px #19202f; */
+
+    
+}
+.Logo2{
+    padding: 5px 50px;
+    display: flex;
+}
+.Logo2 .LogoImg{
+    width: 94px;
+    margin-right: -25px;
+}
+.Logo2 .logoLInk{
+    text-decoration: none;
+}
+.Logo2 h1{
+    color: white;
+    font-size: 45px;
+}
+.Logo2 span{
+    color: var(---color2);
+    transition: .4s;
+}
+.Logo2 span:hover{
+    color: white;
+}
+.navLinks1{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLinks1  li {
+    padding: 10px 0;
+    list-style: none;
+    margin-right: 50px;
+}
+.navLinks1  li .navLink1{
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .4s;
+
+}
+.navLinks1  li .navLink1:hover{
+    color: var(---color2);
+}
+.socials{
+    color: white;
+    display: flex;
+}
+.socials p{
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+.socials li{
+    list-style: none;
+    padding-right: 20px;
+}
+.socials li a{
+    text-decoration: none;
+    color: var(---color2);
+    transition: .4s;
+}
+.socials li a:hover{
+    color: white;
+}
+.copyWrite{
+    background-color: var(---color1);
+    color: gray;
+    height: 60px;
+}
+.copyWrite p{
+    text-align: center;
+    padding-top: 20px;
+}
+@media (max-width: 768px){
+    .FooterMain{
+        display: flex;
+        flex-direction: column;
+    }
+    .Logo2{
+        padding: 15px 50px 5px 50px;
+        display: flex;
+    }
+    .Logo2 .LogoImg{
+        width: 75px;
+        margin-right: -20px;
+    }
+    .Logo2 h1{
+        color: white;
+        font-size: 40px;
+    }
+    .navLinks1  li{
+        padding: 15px ;
+        margin-right: 0;
+    }
+}

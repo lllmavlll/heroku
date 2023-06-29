@@ -1,0 +1,144 @@
+.wepMain{
+    background: url(../Assets/bg/whiteBG1.avif);
+    background-attachment: fixed;
+    height: 1000%;
+
+}
+.sec1h{
+    color: black;
+    font-size: 80px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); 
+    padding-left: 5%;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+.wepBG{
+    background-size: cover;
+    padding-left: 5%;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 10%;
+    padding-bottom: 60px;
+  
+}
+
+.wepBG p{
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+}
+.sec2grid{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    width: 100%;
+    padding: 3% 0 10% 0;
+}
+
+.MainCaard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid grey;
+    margin-bottom: 10%;
+    margin-left: 8%;
+    height: auto;
+
+}
+.MainCaard .cardH1{
+    padding:  20px 40px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-size: 70px;
+    margin-bottom: 0;
+}
+.MainCaard img{ 
+    width: 90%;
+    padding-bottom: 30px;
+    margin-left: 30px;
+}
+.MainCaard p{
+    padding: 0 40px
+}
+
+.wepG2 img{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+.wepCard{
+    background: url(../Assets/bg/blueBG.png);
+    background-attachment: fixed;
+}
+.wepCard h1{
+    color: black;
+    font-size: 90px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    padding-left: 5%;
+    margin-bottom: 80px;
+}
+.overlay{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(1, 98, 171, 0.9);
+    overflow: hidden;
+    height: 0;
+    width: 100% ; 
+    transition: .3s ease-out;
+}
+.overlay h2{
+    padding-top: 30% ;
+    padding-left: 8%;
+    font-size: 24px;
+
+}
+.overlay p{
+    padding-top: 12%;
+    width: 88%;
+}
+.MainCaard:hover .overlay{
+    height: 100%;
+}
+
+@media (max-width:768px){
+    .sec1h{
+    font-size: 60px;
+    padding-top: 20px;
+    padding: 30px 0 0 50px;
+    }
+    .wepBG{
+    grid-template-columns: 90%;
+    padding: 0 40px;
+    gap: 2%;
+
+    }
+    .sec2grid{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        width: 100%;
+        padding: 3% 0 10% 0;
+    }
+    .wepCard h1{
+        font-size: 60px;
+        margin-top: 80px;
+    }
+    .MainCaard .cardH1{
+        padding:  20px 40px;
+        font-size: 50px;
+        margin-top: 0;
+    }
+    .MainCaard{
+        margin: 0 10% 10% 10%;
+        height: auto;
+
+    }
+    .MainCaard img{ 
+        width: 90%;
+        padding-bottom: 30px;
+        margin-left: 15px;
+    }
+}

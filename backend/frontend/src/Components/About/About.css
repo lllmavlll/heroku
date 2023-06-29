@@ -1,0 +1,56 @@
+.AboutMain{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    background: url(../Assets/bg/val_BGI.jpg);
+    background-attachment: fixed;
+}
+.AboutCentre{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    position: relative;
+}
+.AboutCentre .AboutH1 h1 {
+    font-size: 60px;
+    padding: 20px 0;
+}
+.GridMain{
+    display: grid;
+    gap: 10%;
+    grid-template-columns: 40% 50%;
+}
+.AboutNote p{
+    font-size: 17px;
+}
+.AboutNote h4{
+    font-weight: 600;
+    padding: 6px 0;
+    text-transform: uppercase;
+}
+.GridImg img{
+    width: 600px;
+    box-shadow:  0 10px 10px rgba(0, 0, 0, 0.4);
+
+}
+@media (max-width: 768px){
+    .AboutCentre{
+    padding: 20px 0;
+    width: 85%;
+    }
+    .AboutCentre .AboutH1 h1 {
+        font-size: 50px;
+        padding: 15px 0;
+    }
+    .GridMain{
+        grid-template-columns: 100%;
+        gap: 15px;
+    }
+    .GridImg img{
+        width: 100%;
+    }
+}
