@@ -1,8 +1,13 @@
 const express = require('express')
 const auth = require('./routes/auth')
 const dotenv =require('dotenv')
+const cors = require('cors')
 require('./db/mongo')  //----- mongo db path import
 const app = express()
+
+//----- using cors to comunicate with backend -----//
+
+app.use(cors())
 
 //----- dontenv file config
 dotenv.config()
@@ -13,7 +18,6 @@ app.use(express.json())
 
 //----- auth route -----//
 app.use('/',auth)
-
 
 //----- deployement code -----//
 
