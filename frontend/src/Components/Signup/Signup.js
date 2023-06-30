@@ -48,7 +48,7 @@ const Signup = () => {
       window.alert("signup success!")
       console.log("signup success!")
     }
-    navigate('/signin')
+    navigate('/signup')
 
   }
 
