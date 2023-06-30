@@ -56,7 +56,7 @@ const Weapons = () => {
      //----- useState to get data of a user through token -----//
      useEffect(()=>{
         callPage()
-     })
+     },[])
 
 
   return (
