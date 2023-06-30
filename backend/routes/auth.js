@@ -9,7 +9,7 @@ auth.use(cookieParser());
 const jwt = require('jsonwebtoken')
 
 //----- landing page -----//
-auth.get('/',(req,res)=>{
+auth.get('/hh',(req,res)=>{
     res.send("home")
 })
 auth.get('/signup',(req,res)=>{
