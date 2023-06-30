@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Support.css'
 import supBanner from '../Assets/bg/wideBanner1.webp'
-import dotenv from 'dotenv'
 
-dotenv.config()
 
 const Support =()=>{
 
@@ -13,7 +11,7 @@ const Support =()=>{
 //----- call function to check if user loged in -----//
    const callPage =async()=>{
       try { 
-         const res = await fetch ('https://mavzone.onrender.com/getdata',{
+         const res = await fetch ('/getdata',{
             method:"GET",
             headers:{
                "Content-Type":"application/json"
@@ -70,6 +68,7 @@ const Support =()=>{
 
    }
    
+
 
    return (
        <div className="supMain">

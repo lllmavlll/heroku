@@ -21,10 +21,10 @@ const Footer = () => {
       </div>
       <div className='socials'>
         <p>follow us</p>
-        <li><a target='blank' href='https://www.linkedin.com/in/mahesh-k-n-732121251/'><i class="fa-brands fa-linkedin-in"></i></a></li>
-        <li><a target='blank' href='https://github.com/lllmavlll?tab=repositories'><i class="fa-brands fa-github"></i></a></li>
-        <li><a target='blank' href='https://twitter.com/riotgames'><i class="fa-brands fa-twitter"></i></a></li>
-        <li><a target='blank' href='https://www.youtube.com/RiotGames/'><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a target='blank' href='https://www.linkedin.com/in/mahesh-k-n-732121251/'><i className="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a target='blank' href='https://github.com/lllmavlll?tab=repositories'><i className="fa-brands fa-github"></i></a></li>
+        <li><a target='blank' href='https://twitter.com/riotgames'><i className="fa-brands fa-twitter"></i></a></li>
+        <li><a target='blank' href='https://www.youtube.com/RiotGames/'><i className="fa-brands fa-youtube"></i></a></li>
       </div>
     </div>
     <div className='copyWrite'>

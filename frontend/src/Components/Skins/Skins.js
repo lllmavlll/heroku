@@ -35,30 +35,30 @@ const Skins = () => {
    //----- useState to get data of a user through token -----//
    useEffect(()=>{
       callPage()
-   })
+   },[])
 
    //----- fetcihig skin  from local data -----//
 
-   const [fetchData,setFetchData]= useState([])
+   // const [fetchData,setFetchData]= useState([])
 
 
-   useEffect(()=>{
-      async function getData(){
-         const response = await fetch('skinsData.json')
-         const data = await response.json()
-         setFetchData(data)
+   // useEffect(()=>{
+   //    async function getData(){
+   //       const response = await fetch('skinsData.json')
+   //       const data = await response.json()
+   //       setFetchData(data)
 
-         // .then(response=>response.json())
-         // .then(data=>showSkins(data))
+   //       // .then(response=>response.json())
+   //       // .then(data=>showSkins(data))
       
-         // function showSkins(data){
-         //    console.log(data.skins)
-         // }
+   //       // function showSkins(data){
+   //       //    console.log(data.skins)
+   //       // }
 
-      }
-      getData()
-      console.log(fetchData,"results")
-   },[]);
+   //    }
+   //    getData()
+   //    console.log(fetchData,"results")
+   // },[]);
 
  
   return (
