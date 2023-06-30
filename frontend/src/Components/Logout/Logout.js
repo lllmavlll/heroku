@@ -12,7 +12,7 @@ const navigate = useNavigate()
 
          //----- useEffect to logout -----//
          useEffect(()=>{
-            fetch('/logout',{
+            fetch('https://mavzone.onrender.com/logout',{
               method:"GET",
               headers:{
                 Accept:"application/json",

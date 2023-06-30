@@ -13,7 +13,7 @@ const Skins = () => {
 //----- call function to check if user loged in -----//
    const callPage =async()=>{
       try { 
-         const res = await fetch ('/getdata',{
+         const res = await fetch ('https://mavzone.onrender.com/getdata',{
             method:"GET",
             headers:{
                Accept:"application/json",
