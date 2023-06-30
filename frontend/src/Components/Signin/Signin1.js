@@ -17,7 +17,7 @@ const Signin = () => {
   const loginUser= async(e)=>{
     e.preventDefault();
 
-    const res = await fetch('https://mavzone.onrender.com/signin',{
+    const res = await fetch('/signin',{
       method:'POST',
       headers:{
         "Content-Type":" application/json"

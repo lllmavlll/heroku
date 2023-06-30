@@ -30,7 +30,7 @@ const Signup = () => {
 
     const {username, email, password, cpassword} = user
 
-    const res =await fetch('https://mavzone.onrender.com/signup',{
+    const res =await fetch('/signup',{
       method:'POST',
       headers:{
         "content-type":"application/json"

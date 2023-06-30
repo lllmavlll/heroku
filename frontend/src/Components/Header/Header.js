@@ -12,7 +12,7 @@ const Header = () => {
   //----- call function to check if user loged in -----//
      const callPage =async()=>{
         try { 
-           const res = await fetch ('https://mavzone.onrender.com/getdata',{
+           const res = await fetch ('/getdata',{
               method:"GET",
               headers:{
                  "Content-Type":"application/json"

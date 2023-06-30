@@ -11,7 +11,7 @@ const Support =()=>{
 //----- call function to check if user loged in -----//
    const callPage =async()=>{
       try { 
-         const res = await fetch ('https://mavzone.onrender.com/getdata',{
+         const res = await fetch ('/getdata',{
             method:"GET",
             headers:{
                "Content-Type":"application/json"
@@ -47,7 +47,7 @@ const Support =()=>{
 
       const { username, email, message} = userData;
 
-      const res = await fetch('https://mavzone.onrender.com/support',{
+      const res = await fetch('/support',{
          method:"POST",
          headers:{
             "Content-Type":"application/json"
