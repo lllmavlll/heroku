@@ -7,7 +7,6 @@ import {
   sendPasswordResetEmail,
 } from "firebase/auth";
 import { auth } from "../firebase/firebaseConfig";
-import { Spinner } from "react-bootstrap";
 
 const UserContext = createContext();
 
@@ -36,6 +35,7 @@ export const AUthContextProvider = ({ children }) => {
   };
 
   useEffect(() => {
+    console.log(user);
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
       setIsLoading(true);
