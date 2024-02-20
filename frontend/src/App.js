@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from 'react'
-import {  BrowserRouter,Route,Routes } from 'react-router-dom';
-import {reducer , initialState}from '../src/reducer/UseReduce';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { reducer, initialState } from '../src/reducer/UseReduce';
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer';
 import About from './Components/About/About';
@@ -35,69 +35,79 @@ import Omen from './Components/Agents/Omen';
 import Phoenix from './Components/Agents/Phoenix';
 import Brimstone from './Components/Agents/Brimstone';
 import AgentsHome from './Components/Agents/AgentsHome';
+import { UserAuth } from './Context/AuthContext';
 
 
-  //----- context API -----//
-  export const userContext =createContext();
+//----- context API -----//
+export const userContext = createContext();
 
-  //----- storing all the routes inside a function -----//
-  const Routing =()=>{
-    return(
-      <Routes>
-      <Route path='' element={<Home/>}/>
-      <Route path='about' element={<About/>}/>
-      <Route path='agents' element={<Agents/>}>
-        <Route path='' element={<AgentsHome/>}/>
-        <Route path='yoru' element={<Yoru/>}/>
-        <Route path='brimstone' element={<Brimstone/>}/>
-        <Route path='reyna' element={<Reyna/>}/>
-        <Route path='sage' element={<Sage/>}/>
-        <Route path='jett' element={<Jett/>}/>
-        <Route path='raze' element={<Raze/>}/>
-        <Route path='astra' element={<Astra/>}/>
-        <Route path='fade' element={<Fade/>}/>
-        <Route path='chamber' element={<Chamber/>}/>
-        <Route path='gekko' element={<Gekko/>}/>
-        <Route path='killjoy' element={<Killjoy/>}/>
-        <Route path='skye' element={<Skye/>}/>
-        <Route path='kay-o' element={<Kayo/>}/>
-        <Route path='viper' element={<Viper/>}/>
-        <Route path='cypher' element={<Cypher/>}/>
-        <Route path='breach' element={<Breach/>}/>
-        <Route path='sova' element={<Sova/>}/>
-        <Route path='neon' element={<Neon/>}/>
-        <Route path='harbor' element={<Harbor/>}/>
-        <Route path='omen' element={<Omen/>}/>
-        <Route path='phoenix' element={<Phoenix/>}/>
-      </Route>
-      <Route path='maps' element={<Maps/>}/>
-      <Route path='skins' element={<Skins/>}/>
-      <Route path='support' element={<Support/>}/>
-      <Route path='weapons' element={<Weapons/>}/>
-      <Route path='signin' element={<Signin/>}/>
-      <Route path='signup' element={<Signup/>}/>
-      <Route path='logout' element={<Logout/>}/>
-  </Routes>
-    )
-  }
+//----- storing all the routes inside a function -----//
+const Routing = () => {
+  const { user } = UserAuth()
+
+  return (
+    <Routes>
+      {user ?
+        <>
+          <Route path='' element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='agents' element={<Agents />}>
+            <Route path='' element={<AgentsHome />} />
+            <Route path='yoru' element={<Yoru />} />
+            <Route path='brimstone' element={<Brimstone />} />
+            <Route path='reyna' element={<Reyna />} />
+            <Route path='sage' element={<Sage />} />
+            <Route path='jett' element={<Jett />} />
+            <Route path='raze' element={<Raze />} />
+            <Route path='astra' element={<Astra />} />
+            <Route path='fade' element={<Fade />} />
+            <Route path='chamber' element={<Chamber />} />
+            <Route path='gekko' element={<Gekko />} />
+            <Route path='killjoy' element={<Killjoy />} />
+            <Route path='skye' element={<Skye />} />
+            <Route path='kay-o' element={<Kayo />} />
+            <Route path='viper' element={<Viper />} />
+            <Route path='cypher' element={<Cypher />} />
+            <Route path='breach' element={<Breach />} />
+            <Route path='sova' element={<Sova />} />
+            <Route path='neon' element={<Neon />} />
+            <Route path='harbor' element={<Harbor />} />
+            <Route path='omen' element={<Omen />} />
+            <Route path='phoenix' element={<Phoenix />} />
+          </Route>
+          <Route path='maps' element={<Maps />} />
+          <Route path='skins' element={<Skins />} />
+          <Route path='support' element={<Support />} />
+          <Route path='weapons' element={<Weapons />} />
+        </> :
+        <>
+          <Route path='signup' element={<Signup />} />
+          <Route path='logout' element={<Logout />} />
+          <Route path='signin' element={<Signin />} />
+        </>
+      }
+      {/* <Redirect to='/'/> */}
+    </Routes>
+  )
+}
 
 
 const App = () => {
 
   //----- useReducer hook -----//
-  const [state, dispatch]= useReducer(reducer,initialState)
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   return (
-   <>
-   <userContext.Provider value={{state, dispatch}}>
-   <BrowserRouter >
-    <Header/>
-    <Routing/>
-    <Footer/>
-   </BrowserRouter>
-   </userContext.Provider>
+    <>
+      <userContext.Provider value={{ state, dispatch }}>
+        <BrowserRouter >
+          <Header />
+          <Routing />
+          <Footer />
+        </BrowserRouter>
+      </userContext.Provider>
 
-   </>
+    </>
   )
 }
 

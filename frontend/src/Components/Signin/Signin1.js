@@ -7,6 +7,7 @@ import { userContext } from '../../App'
 import { UserAuth } from '../../Context/AuthContext'
 
 const Signin = () => {
+  const navigate =useNavigate()
   const { userLogin, forgotPassword } = UserAuth()
 
 
@@ -20,6 +21,7 @@ const Signin = () => {
     try {
       const loadingToast = toast.loading('Loading...')
       await userLogin(email, password)
+      navigate('/')
       toast.dismiss(loadingToast)
     } catch (error) {
       toast.error(String(error.code).split("/")[1].replaceAll("-", " "))

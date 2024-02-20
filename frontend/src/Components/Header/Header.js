@@ -1,15 +1,20 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate} from 'react-router-dom'
 import './Header.css'
 import logoimg from '../Assets/imgs/LOGO1.png'
 import { userContext } from '../../App'
 import { UserAuth } from '../../Context/AuthContext'
 
 const Header = () => {
-
-   const { user } = UserAuth()
+   const navigate = useNavigate()
+   const { user, logout } = UserAuth()
 
    //----- useState to get username when logged in
+   const signOut=(e)=>{
+      e.preventDefault()
+      logout()
+      navigate('signin')
+   }
 
    const RenderMenu = () => {
       //----- if user is logged in show this elements on the nav bar -----//
@@ -18,7 +23,7 @@ const Header = () => {
             <>
                <div className='navSignup'>
                   {/* <i class="fa-solid fa-user"></i> */}
-                  <Link to={"logout"}><button className='signButton' title='Log out?'>log out</button></Link>
+                  <button className='signButton' onClick={e=> signOut(e)} title='Log out?'>sign out</button>
                   {/* <Link to={"logout"}><button className='signButton'><i class="fa-solid fa-right-from-bracket"></i></button></Link> */}
                </div>
             </>
@@ -52,7 +57,7 @@ const Header = () => {
                <li><Link className='navLink' to={"agents"}>agents</Link></li>
                <li><Link className='navLink' to={'skins'}>skins</Link></li>
             </div>
-            {user ?
+            {/* {user ?
                (<div className='navSignup'>
                   <Link to={"logout"}><button className='signButton' title='Log out?'>log out</button></Link>
                </div>) :
@@ -60,7 +65,8 @@ const Header = () => {
                   <Link to={"signin"}><button className='signButton'>Sign in</button></Link>
                </div>
                )
-            }
+            } */}
+            <RenderMenu/>
          </div>
       </>
    )

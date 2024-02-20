@@ -4,10 +4,11 @@ import '../Signin/Signin.css'
 import { NavLink } from 'react-router-dom'
 import { UserAuth } from '../../Context/AuthContext'
 import { Toaster, toast } from 'sonner'
+import { useNavigate } from 'react-router-dom'
 
 
 const Signup = () => {
-
+  const navigate =useNavigate()
   const { createUser } = UserAuth()
 
   const [inputValue, setInputValue] = useState({
@@ -35,6 +36,7 @@ const Signup = () => {
       try {
         const loadingToast = toast.loading('Loading...')
         await createUser(email, password)
+        navigate('/')
         toast.dismiss(loadingToast)
       } catch (error) {
         toast.error(String(error.code).split("/")[1].replaceAll("-", " "))
