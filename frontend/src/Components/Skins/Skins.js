@@ -1,65 +1,11 @@
 import React ,{ useEffect , useState} from 'react'
 import './Skins.css'
-import { useNavigate } from 'react-router-dom'
 import skinBundle from '../Assets/skins/AraxysB.jpg'
 import edition from '../Assets/skins/editions.png'
 import shop from '../Assets/skins/shop.webp'
 import skinData from '../../skinsLocalData/skinsData.json'
 
 const Skins = () => {
-  const navigate =useNavigate()
-   
-
-//----- call function to check if user loged in -----//
-   const callPage =async()=>{
-      try { 
-         const res = await fetch ('/getdata',{
-            method:"GET",
-            headers:{
-               Accept:"application/json",
-               "Content-Type":"application/json"
-            },
-            credentials:'include'
-         });
-         const data = await res.json();
-         // console.log(data)
-          if(!res.status===200){
-            const error = new Error(res.error)
-            throw error;
-          }
-      } catch (error) {
-         console.log(error)   
-         navigate('/signin')      
-      }
-   }
-   //----- useState to get data of a user through token -----//
-   useEffect(()=>{
-      callPage()
-   },[])
-
-   //----- fetcihig skin  from local data -----//
-
-   // const [fetchData,setFetchData]= useState([])
-
-
-   // useEffect(()=>{
-   //    async function getData(){
-   //       const response = await fetch('skinsData.json')
-   //       const data = await response.json()
-   //       setFetchData(data)
-
-   //       // .then(response=>response.json())
-   //       // .then(data=>showSkins(data))
-      
-   //       // function showSkins(data){
-   //       //    console.log(data.skins)
-   //       // }
-
-   //    }
-   //    getData()
-   //    console.log(fetchData,"results")
-   // },[]);
-
  
   return (
     <>
